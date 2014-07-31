@@ -1,7 +1,7 @@
 Concordance Project
 ====================
 
--Created modern, responsive design, using Bootstrap and AngularJS web technologies on the front end, and a search engine core written in the Go language for the backend. 
+- Created modern, responsive design, using Bootstrap and AngularJS web technologies on the front end, and a search engine core written in the Go language for the backend. 
 
 - Built the main web page with HTML/CSS, with AngularJS to parse results from the search engine, and adding customizations to the page to filter and sort results.
 
