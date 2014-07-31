@@ -1,0 +1,38 @@
+<html ng-app="searchApp">
+  <body>
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#">Search</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+    <div ng-controller="mainController">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Search Results</h3>
+        </div>
+        <div class="panel-body">
+          <form role="form">   
+            <div class="col-md-4" style="padding:0; margin:0;">
+              <div class="input-group">
+                <input type="search" class="form-control" ng-model="userSearchTerm" placeholder="Enter search term">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit" ng-click='getresults(userSearchTerm);'>search</button>
+                </span>
+              </div>
+            </div>
+          </form>
+          <br><br>
+          <div class="well" ng-show="showResults"> 
+            <p>{{matchcount}} matches for: {{searchterm}}</p>
+            <pre>
+              <!-- <ul id="monofont">
+              <li ng-repeat="match in results">
+              {{match}}
+              </li>
+              </ul> -->
+              <span ng-repeat="match in results">{{match}}<br/></span>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+</html>

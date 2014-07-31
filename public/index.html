@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="searchApp">
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link href="custom.css" rel="stylesheet">
+</head>
+
+<body ng-controller="mainController">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button><a class="navbar-brand" href="index.html">Concordance Builder</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </div>
+      </div>
+    </div>
+    <div class="container theme-showcase">
+      <br/><br/><br/>
+      <h2>Concordance Builder</h2>
+      <div id="main">
+        <div ng-view></div>
+      </div>
+      <footer class="text-center">
+      </footer>
+    </body>
+    </html>

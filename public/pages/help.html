@@ -1,0 +1,39 @@
+<html ng-app="searchApp">
+<body>
+  <ul class="nav nav-tabs">
+    <li><a href="#" title="Concordance Builder">Search</a></li>
+    <li class="active"><a href="#help">Help</a></li>
+  </ul>
+
+  <div ng-controller="helpController">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Help Information</h3>
+      </div>
+      <div class="panel-body">
+        <p> A <i>concordance</i> is an alphabetical list of the principal words used in a book or body of work, with their immediate contexts <a href="http://en.wikipedia.org/wiki/Concordance_%28publishing%29">[Wikipedia]</a>. This tool scans a repository that contains different material in plain text format and return the term in-context.</p>
+        <ul>
+          <li>• To search for a term, enter the term in the search box and click search</li>
+        <p>The table below provides some examples to get started. Click on any term to build a concordance for that term.</p>
+        <table class="table">
+            <thead>
+              <tr><th>Term</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="s1 in samples1 track by $index">
+              <td><a href ng-click="searchFor(s1.Term)">{{s1.Term}}</a></td>
+              <td>{{s1.Description}}</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+       </div>
+     </div>
+   </div>
+   <br/><br/>
+
+ </span></div></ul></ul>
+
+</body>
+<script src="script.js"></script>
+</html>
