@@ -8,7 +8,8 @@ Concordance Project
 To Run
 --------------------
 1. Install node on local machine
-2. cd into directory, type: npm install body-parser
-					  		npm install express
-3. run local server,  type: node server.js
-4. visit localhost:8000 in browser
+2. cd into directory
+3. type: npm install body-parser
+4. type: npm install express
+5. run local server,  type: node server.js
+6. visit localhost:8000 in browser
